@@ -1,0 +1,522 @@
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #171717 !important;
+}
+
+menu, ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.btn-primary {
+  color: #041E42 !important;
+  background-color: #FFB81C !important;
+  border-color: #FFB81C !important;
+  font-weight: 600 !important;
+}
+
+.btn-primary:hover {
+  color: #041E42 !important;
+  background-color: white !important;
+  border-color: #041E42 !important;
+  font-weight: 600 !important;
+}
+
+.btn-primary-custom:hover {
+  color: #1ee4fe !important;
+  background-color: #292929 !important;
+  border-color: #1ee4fe !important;
+  font-weight: 600 !important;
+}
+
+.btn-primary-custom {
+  color: #292929 !important;
+  background-color: #1ee4fe !important;
+  border-color: #1ee4fe !important;
+  font-weight: 600 !important;
+  width: 25%;
+}
+
+.w-75-custom {
+  width: 75%;
+}
+
+.header-bg {
+  background-color: #1e1e1e !important;
+  height: 60px !important;
+}
+
+.fixed-navbar {
+  position: fixed !important;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+}
+
+.navbar {
+  background-color: #1e1e1e !important;
+  z-index: 10;
+}
+
+.nav-item {
+  text-decoration: none;
+}
+
+.nav-item a {
+  color: #cacaca !important;
+}
+
+.nav-item.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.nav-item.active a {
+  -webkit-text-decoration-color: #1ee4fe !important;
+          text-decoration-color: #1ee4fe !important;
+  color: white !important;
+}
+
+ul.ul-inline.navbar-nav {
+  margin-right: 1%;
+}
+
+.dropdown-btn {
+  visibility: hidden;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.nav-link {
+  color: white;
+}
+
+.main-home {
+  height: 800px;
+  background-color: #1e1e1e !important;
+}
+
+.main-home-media {
+  height: 800px;
+  background-color: #1e1e1e !important;
+}
+
+.banner-text-custom {
+  font-size: 22px !important;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.fd-underline:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.animated-underline:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/*********************************************************
+				About Page
+*********************************************************/
+.about-section {
+  background-color: #171717 !important;
+}
+
+.about-row {
+  padding-top: 150px !important;
+  padding-bottom: 150px !important;
+}
+
+.border-radius {
+  border-radius: 0.5rem !important;
+}
+
+.headshot {
+  width: 100%;
+  border-radius: 0.5rem !important;
+}
+
+.headshot-col {
+  padding: 25px !important;
+  padding-left: 15px !important;
+}
+
+.about {
+  padding: 25px;
+}
+
+.about-heading {
+  color: #1ee4fe;
+  font-size: 38px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  display: inline-block;
+}
+
+h5.mt-0.about-heading {
+  display: inline;
+}
+
+.hr-px-about {
+  display: inline-block;
+  height: 1px;
+  width: 60%;
+  margin-bottom: 10px;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#1ee4fe), to(transparent), color-stop(50%, #1ee4fe)) !important;
+}
+
+.about-p {
+  color: white;
+}
+
+.animate-pulse {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.grow {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.h-px {
+  display: inline-block;
+  height: 1px;
+  width: 30rem;
+  margin-bottom: 10px;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/*********************************************************
+				Software Dev Page
+*********************************************************/
+.main-software-dev {
+  background-color: #171717 !important;
+  height: 2000px;
+}
+
+.heading-software-dev {
+  color: white;
+  font-size: 42px;
+}
+
+.subheading-software-dev {
+  color: #cacaca;
+}
+
+.heading-projects {
+  color: white;
+  font-size: 32px;
+}
+
+.hr-personal-projects {
+  border-bottom: 2px solid #1ee4fe !important;
+}
+
+/**************   Cards  **********************/
+.card-container {
+  width: 90% !important;
+}
+
+.card {
+  height: 400px;
+  border-radius: 0.5rem !important;
+  min-width: 300px !important;
+  border: 1px solid #171717 !important;
+  background-color: #262626 !important;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 0 10px #1ee4fe;
+          box-shadow: 0 0 10px #1ee4fe;
+}
+
+.card:hover .card-text {
+  color: white !important;
+}
+
+.card-img-top {
+  border-bottom: 2px solid #1ee4fe !important;
+}
+
+.card-body {
+  height: 200px;
+}
+
+.card-title {
+  margin-bottom: .25rem !important;
+  color: white !important;
+  font-size: 25px !important;
+}
+
+.card-subtitle {
+  margin-bottom: .5rem !important;
+  color: #8E8E8E !important;
+  font-size: 14px !important;
+  text-transform: uppercase;
+}
+
+.card-text {
+  color: #8E8E8E !important;
+  font-size: 14px !important;
+}
+
+.heading-tech-stack {
+  color: white;
+  font-size: 32px;
+}
+
+.img-tech-stack {
+  border-radius: 0.5rem;
+}
+
+.w-60 {
+  width: 65% !important;
+}
+
+.title-tech-stack {
+  color: white !important;
+  font-size: 28px;
+}
+
+.p-tech-stack {
+  color: white !important;
+}
+
+/*********************************************************
+				Golf Page
+*********************************************************/
+.main-golf {
+  background-color: #171717 !important;
+  background-image: url(../images/golf.jpg) !important;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+/*********************************************************
+				Project Details Page
+*********************************************************/
+.main-project-pg {
+  background-color: #171717 !important;
+  height: 100%;
+  width: 100%;
+}
+
+.left-side-menu-fixed {
+  background-color: #292929 !important;
+  position: fixed !important;
+  height: 100% !important;
+  width: 20% !important;
+  padding: 2.5rem !important;
+}
+
+.right-scrollable {
+  background: #171717 !important;
+  height: 100%;
+  left: 18%;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.back-btn {
+  color: #929292;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.back-btn:hover {
+  color: #1ee4fe;
+}
+
+/******** Swap back button on hover ******/
+.swap img:last-child {
+  display: none;
+}
+
+.swap:hover img:first-child {
+  display: none;
+}
+
+.swap:hover img:last-child {
+  display: inline-block;
+}
+
+.a-github {
+  color: #1ee4fe;
+  font-weight: 600;
+}
+
+.a-github:hover {
+  color: #929292;
+  font-weight: 600;
+}
+
+.fw-400 {
+  font-weight: 300 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.a-inpage-nav {
+  color: #8E8E8E !important;
+  font-weight: 300;
+}
+
+.a-inpage-nav:hover {
+  color: #1ee4fe !important;
+}
+
+.p-16 {
+  padding: 4rem !important;
+}
+
+.hr-px {
+  display: inline-block;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 10px;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#1ee4fe), to(transparent), color-stop(50%, #1ee4fe)) !important;
+}
+
+.heading-project {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 0px;
+}
+
+.sc-lg {
+  border-radius: 0.5rem;
+}
+
+.android-sc {
+  width: 50%;
+}
+
+.results-sc {
+  display: inline-block;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.responsive-youtube {
+  width: 80%;
+  height: 500px;
+}
+
+.disclaimer {
+  font-weight: 500 !important;
+  font-size: 12px;
+  color: grey;
+}
+
+.login-credentials-heading {
+  font-weight: 600 !important;
+  font-size: 16px;
+  color: grey;
+}
+
+/***  Remove links in index hero  ***/
+@media only screen and (max-width: 767px) {
+  .media-sw-link {
+    visibility: hidden;
+  }
+  .media-golf-link {
+    visibility: hidden;
+  }
+  .headshot {
+    margin: 0 auto !important;
+    display: block !important;
+    width: 90%;
+    border-radius: 0.5rem !important;
+  }
+  .about {
+    padding: 50px !important;
+  }
+  .media-card-col {
+    padding-bottom: 30px !important;
+    margin-bottom: 20px;
+  }
+  .card {
+    height: 450px;
+  }
+  .left-side-menu-fixed {
+    display: none;
+  }
+  .right-scrollable {
+    left: 0%;
+  }
+  .full-width {
+    display: none;
+  }
+}
+
+/***  Resize nav icons  ***/
+@media only screen and (max-width: 989px) {
+  .media-icon {
+    width: 3% !important;
+  }
+  .w-75 {
+    width: unset;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .media-width {
+    display: none;
+  }
+}
+
+/********************************************************************
+			Media Screens Styling
+********************************************************************/
+/*# sourceMappingURL=styles.css.map */
