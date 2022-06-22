@@ -166,8 +166,8 @@ a {
 }
 
 .about-row {
-	padding-top: 150px !important;
-	padding-bottom: 150px !important;
+	padding-top: 150px;
+	padding-bottom: 150px;
 }
 
 .border-radius {
@@ -498,13 +498,17 @@ h5.mt-0.about-heading {
 	}
 	.headshot {
 		margin: 0 auto !important;
-		display: block !important;
-		width: 90%;
+		display: block;
+		width: 50%;
 		border-radius: 0.5rem !important;
 	}
 
 	.about {
 		padding: 50px !important;
+	}
+	.media-about-row {
+		padding-top: 0px;
+		padding-bottom: 0px;
 	}
 
 	.media-card-col {
@@ -523,6 +527,8 @@ h5.mt-0.about-heading {
 	.full-width {
 		display: none;
 	}
+
+	
   }
 
   /***  Resize nav icons  ***/
@@ -536,6 +542,9 @@ h5.mt-0.about-heading {
   }
 
   @media only screen and (min-width: 768px) {
+	.media-width {
+		display: none;
+	}
 	.media-width {
 		display: none;
 	}
