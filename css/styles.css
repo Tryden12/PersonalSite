@@ -536,7 +536,23 @@ h5.mt-0.about-heading {
 /***  Resize nav icons  ***/
 @media only screen and (max-width: 989px) {
   .media-icon {
-    width: 3% !important;
+    width: 70% !important;
+    padding: 5px;
+  }
+  .navbar-nav {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  ul.ul-inline.navbar-nav {
+    margin-left: 1%;
   }
   .w-75 {
     width: unset;
