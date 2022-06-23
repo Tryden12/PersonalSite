@@ -427,6 +427,10 @@ h5.mt-0.about-heading {
   color: #1ee4fe !important;
 }
 
+.p-8 {
+  padding: 2.5rem !important;
+}
+
 .p-16 {
   padding: 4rem !important;
 }
@@ -515,6 +519,17 @@ h5.mt-0.about-heading {
   }
   .full-width {
     display: none;
+  }
+  .img-responsive-media {
+    width: 85%;
+    height: auto;
+  }
+  .btn-primary-custom {
+    color: #292929 !important;
+    background-color: #1ee4fe !important;
+    border-color: #1ee4fe !important;
+    font-weight: 600 !important;
+    width: 70%;
   }
 }
 
